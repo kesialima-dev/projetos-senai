@@ -1,0 +1,56 @@
+programa {
+  funcao inicio() {
+    limpa( )
+   //Etapa 1: REcepção do cliente
+   cadeia nome_cliente
+    escreva("===BEM VINDO À LANCHONETE DEV===\n")
+    escreva("Por favor, digite o seu nome:")
+    leia(nome_cliente)
+
+    escreva("Olá, ",nome_cliente,"!É um prazer atender você hoje.\n") 
+
+    //Etapa 2: Exibindo o cardápio
+    escreva("\n========NOSSO CARDÁPIO========\n")
+    escreva("1. Hambúrguer Clássico - R$25.00\n")
+    escreva("2. Refrigerante Lata - R$8.00\n")
+    escreva("3. Batata Frita - R$12.00\n")
+    escreva("================================")
+
+    //Etapa 3: Anotando o pedido
+    inteiro qtd_hamburguer, qtd_refri , qtd_batata 
+
+    escreva("\nFaça o seu pedido:\n")
+    escreva("Quantos hambúrgueres você deseja?")
+    leia(qtd_hamburguer)
+
+    escreva("Quantos refrigerantes você deseja?")
+    leia(qtd_refri)
+
+    escreva("Quantas batatas você deseja?")
+    leia(qtd_batata)
+
+    //Etapa 4: Cálculos
+    real total_hamburguer, total_refri, total_batata , valor_total 
+
+    total_hamburguer = qtd_hamburguer * 25.00
+    total_refri = qtd_refri * 8.00
+    total_batata = qtd_batata * 12.00 
+    valor_total = total_hamburguer + total_refri + total_batata
+
+    //Cupom Fiscal
+    escreva("\n==========")
+    escreva("=CUPOM FISCAL========\n")
+    escreva("Cliente:", nome_cliente,"\n")
+    escreva("Total Hambúrgueres: R$", total_hamburguer, "\n" )
+    escreva("Total Refrigerantes: R$", total_refri, "\n")
+    escreva("Total Batata Frita: R$", total_batata, "\n" )
+    escreva("-------------------------\n")
+    escreva("VALOR TOTAL A PAGAR: R$", valor_total, "\n")
+    escreva("=================================\n")
+
+    escreva("Obrigado pela preferência e volte sempre!\n")
+  }
+
+}
+
+
