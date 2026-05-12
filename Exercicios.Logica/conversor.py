@@ -2,7 +2,7 @@
 print ("=== Conversor de peso (Kg ⇆ Arroba) === /n") 
 
 peso = float(input("Digite o peso"))
-unidade = input("É em K (quilos) ou A (arrobas)?").upper
+unidade = input("É em K (quilos) ou A (arrobas)?").upper()
 
 if unidade == "K": 
     arrobas = peso / 15
@@ -11,6 +11,7 @@ elif unidade == "A":
     quilos = peso * 15
     print(f"{peso} arrobas = {quilos:.2f} Kg")
 else:
+    print("Unidade inválida!")
     
 
 
